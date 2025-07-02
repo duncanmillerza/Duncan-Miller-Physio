@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Duncan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/logo.png" alt="Duncan Miller Physiotherapy logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Duncan</a></li>
+          <li><a href="wheelchair.html">Wheelchair Seating</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+27845612171" class="phone">Tel: +27845612171</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container about-flex">
+      <div class="about-image">
+        <img src="images/duncan.jpg" alt="Duncan Miller">
+      </div>
+      <div class="about-text">
+        <h1>Duncan Miller</h1>
+        <p>Duncan Miller graduated with a BSc in Physiotherapy from the University of Cape Town in 2014. He began his career in rural Eastern Cape, providing holistic care for patients with complex neurological conditions and developing strong hands-on skills in community rehabilitation, as well as completing Bobath training for neurological patients.</p>
+
+        <p>From 2019 to 2022, Duncan served as a Wheelchair and Seating Specialist at CE Mobility. In that role, with advanced seating training, he led functional assessments, prescribed assistive technologies, and collaborated on low-cost wheelchair solutions for resource-limited settings.</p>
+
+        <p>In April 2022, Duncan founded Duncan Miller Physiotherapy in Johannesburg, focusing on neurological rehabilitation and advanced wheelchair seating solutions.</p>
+
+        <p>In 2025, Duncan completed a Master of Public Health at Imperial College London, specialising in statistics, infectious disease modeling, population health, and health economics. He continues to develop healthcare web applications aimed at improving patient outcomes and operational efficiency across allied health services.</p>
+     </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <h3>Duncan Miller Physiotherapy</h3>
+        <p>101 Kerry Road, Parkview, Johannesburg, South Africa</p>
+        <p>email: <a href="mailto:duncan@duncanmillerphysio.co.za">duncan@duncanmillerphysio.co.za</a></p>
+        <p>Tel: +27845612171</p>
+        <h4>Hours</h4>
+        <p>Monday - Friday: 8am - 5pm</p>
+        <p>Saturday - Sunday: By arrangement</p>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; 2025 Duncan Miller Physiotherapy - All Rights Reserved.</p>
+        <p><a href="#" class="cookies">This website uses cookies.</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navUl = document.querySelector('nav ul');
+    navToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.classList.add('shrink');
+      } else {
+        header.classList.remove('shrink');
+      }
+    });
+  </script>
+</body>
+</html>
